@@ -30,7 +30,7 @@ const items = [
   }
 ];
 
-function CarouselSection() {
+function CarouselSection({portfolio}) {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -55,10 +55,21 @@ function CarouselSection() {
   };
   return (
     <>
-      <div className="section" id="carousel">
-        <Container>
+      <div className="section" id="carousel" ref={portfolio}>
+        <Container className="text-center">
           <div className="title">
-            <h4>Carousel</h4>
+          <h2 className="title">
+          Transformá Ideas en Éxito.
+          </h2>
+              <h5 className="description" style={{padding: '20px', paddingRight: '50px', paddingLeft: '50px'}}>
+              Con décadas de experiencia en la producción de contenido audiovisual
+              de alta calidad, BONS GROUP se destaca en el mercado televisivo.
+              Hemos colaborado con canales de renombre internacional, incluyendo NatGeo, 
+              Telemundo, Cinecanal, y muchas otras marcas líderes. Nuestro historial de 
+              éxitos es el testimonio de nuestro compromiso con la innovación y la excelencia
+              en cada proyecto que abordamos. Confiar en BONS GROUP significa confiar en la 
+              experiencia que garantiza resultados sobresalientes.
+              </h5>
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">

@@ -12,12 +12,15 @@ function CompleteExamples() {
         <Container className="text-center">
           <Row className="justify-content-md-center">
             <Col lg="8" md="12">
-              <h2 className="title">Completed with examples</h2>
+              <h2 className="title">Nuestra Mision</h2>
               <h5 className="description">
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. More importantly, looking at them will give you a picture of
-                what you can built with this powerful Bootstrap 4 ui kit.
+              Somos una productora audiovisual especializada en produccion, 
+              publicidad, documentales y agencia de marketing exclusivamente para canales de televisión líderes, 
+              como NATIONAL GEOGRAPHIC CHANNEL, TELEMUNDO, HOLA TV, CINECANAL, STAR, STAR LIFE, 
+              FX, FX MOVIES, SONY, AXN, COMEDY CENTRAL, PARAMOUNT, E! ENTERTAINMENT, FOX, 
+              VENEVISION, entre otros. Nuestro objetivo es llevar tus ideas al 
+              siguiente nivel y cautivar a tu audiencia como nunca antes. Descubre cómo BONS GROUP
+               puede ser tu aliado estratégico en el mundo del entretenimiento televisivo.
               </h5>
             </Col>
           </Row>

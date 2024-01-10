@@ -15,7 +15,7 @@ function TransparentFooter() {
                 href="https://www.creative-tim.com?ref=nukr-transparent-footer"
                 target="_blank"
               >
-                Creative Tim
+                BONS GROUP
               </a>
             </li>
             <li>

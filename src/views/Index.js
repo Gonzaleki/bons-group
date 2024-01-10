@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 
 // reactstrap components
 // import {
@@ -10,23 +10,17 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
-import Navbars from "./index-sections/Navbars.js";
-import Tabs from "./index-sections/Tabs.js";
-import Pagination from "./index-sections/Pagination.js";
-import Notifications from "./index-sections/Notifications.js";
-import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
-import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
+import Experiencia from './index-sections/Experiencia.js'
+
 
 function Index() {
-  React.useEffect(() => {
+  const portfolio = useRef(null)
+  const quienes = useRef(null)
+
+  useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -39,24 +33,14 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <IndexNavbar portfolio={portfolio} quienes={quienes} />
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
-          <BasicElements />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <Javascript />
-          <Carousel />
-          <NucleoIcons />
           <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
+          <NucleoIcons quienes={quienes}/>
+          {/* <Experiencia quienes={quienes}/> */}
+          <Carousel portfolio={portfolio} />
         </div>
         <DarkFooter />
       </div>
